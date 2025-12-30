@@ -5,7 +5,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.pipeline import Pipeline
 import pickle
 
-# 1. Create dummy training data (matches the schema in test_model.py)
+
 data = [
     {"brand": "Dell", "cpu": "i5", "ram": 8, "storage": "SSD", "gpu": "Integrated", "age_months": 4, "price_usd": 799.99, "sold": 1},
     {"brand": "HP", "cpu": "i7", "ram": 16, "storage": "SSD", "gpu": "Dedicated", "age_months": 12, "price_usd": 1200.00, "sold": 0},
@@ -50,3 +50,4 @@ with open(output_file, "rb") as f:
     loaded_model = pickle.load(f)   
 print("Model loaded successfully for confirmation.")
 print("Training complete.")
+
